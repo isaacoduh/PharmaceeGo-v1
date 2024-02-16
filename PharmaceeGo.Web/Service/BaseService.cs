@@ -24,7 +24,7 @@ public class BaseService : IBaseService
             HttpRequestMessage message = new();
             message.Headers.Add("Accept","application/json");
 
-            message.RequestUri = new Uri(requestDto.url);
+            message.RequestUri = new Uri(requestDto.Url);
             if (requestDto.Data != null)
             {
                 message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8,
