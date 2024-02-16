@@ -6,7 +6,7 @@ using PharmaceeGo.Services.CouponAPI.Models;
 
 namespace PharmaceeGo.Services.CouponAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/coupon")]
     [ApiController]
     public class CouponAPIController: ControllerBase
     {
